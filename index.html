@@ -7,17 +7,22 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Candidate Suitability Analyzer</h1>
+    <div class="container">
+        <h1>Candidate Suitability Analyzer</h1>
 
-    <label for="jobDescription">Paste Job Description:</label>
-    <textarea id="jobDescription" placeholder="Paste the job description here..."></textarea>
+        <label for="jobDescription">Paste Job Description:</label>
+        <textarea id="jobDescription" placeholder="Paste the job description here..."></textarea>
 
-    <label for="cvUpload">Upload Candidate CV:</label>
-    <input type="file" id="cvUpload" accept=".pdf,.doc,.docx">
+        <label for="cvUpload">Upload Candidate CV:</label>
+        <div id="dropArea" class="drop-area">
+            <p>Drag & Drop CV here or click to upload</p>
+            <input type="file" id="cvUpload" accept=".pdf,.doc,.docx">
+        </div>
 
-    <button onclick="analyzeCandidate()">Create Suitability Summary</button>
+        <button onclick="analyzeCandidate()">Create Suitability Summary</button>
 
-    <div id="result"></div>
+        <div id="result"></div>
+    </div>
 
     <script src="script.js"></script>
 </body>
