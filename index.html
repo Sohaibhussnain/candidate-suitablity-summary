@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate Suitability Analyzer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Candidate Suitability Analyzer</h1>
+
+    <label for="jobDescription">Paste Job Description:</label>
+    <textarea id="jobDescription" placeholder="Paste the job description here..."></textarea>
+
+    <label for="cvUpload">Upload Candidate CV:</label>
+    <input type="file" id="cvUpload" accept=".pdf,.doc,.docx">
+
+    <button onclick="analyzeCandidate()">Create Suitability Summary</button>
+
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
